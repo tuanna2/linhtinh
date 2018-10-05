@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="giaodien.css">
+    <script type="text/javascript">
+        function kiemtra(){
+            // var hodk=document.getElementById("hodangky");
+            // var tendk=document.getElementById("tendangky");
+            // var sdt=document.getElementById("sodt");
+            // var mk=document.getElementById("pass");
+            var i=0;
+                if(form1.hodangky.value ==""){
+                    i++;
+                    form1.hodangky.style.border="1px solid red";}
+                else
+                    hodk.style.border="1px solid green"; 
+                if(form1.tendangky.value==""){
+                    i++;
+                    form1.tendangky.style.border="1px solid red";}
+                else
+                    tendk.style.border="1px solid green";
+                if( form1.sodt.value == "" ){
+                    i++;
+                    form1.sodt.style.border="1px solid red";}
+                else
+                    form1.sodt.style.border="1px solid green"; 
+                if(form1.pass.value==""){
+                    i++;
+                    form1.pass.style.border="1px solid red";}
+                else
+                    form1.pass.style.border="1px solid green"; 
+            if(i==0)
+                    return true;
+            else
+                    return false;
+            }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div id = "dky">Đăng ký</div>
+        <div id = "textfree">Luôn miễn phí.</div>
+        <div class="form">
+    <form name="form1" action ="reg.php">      
+        <div id="hovaten">
+                <input class="hoten" id="hodangky" type="text" placeholder ="Họ"/>
+                <input class="hoten" id="tendangky" type="text" placeholder ="Tên"/>
+        </div>
+        <div id="sdt">
+                <input class="phone" id="sodt" type="text" placeholder ="Số di động hoặc email"/>
+                <input class="phone" id="pass" type="password" placeholder ="Mật khẩu mới"/>
+        </div>
+        <div id="Reg">
+            <input id="dki" type="submit" value="Đăng ký" onclick="return kiemtra()"/>
+        </div>
+    </form>
+        </div>
+    </div>
+</body>
+</html>

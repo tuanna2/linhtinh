@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="giaodien.css">
+    <script>
+        $(document).ready(function () {
+             $("#dki").click(function(){
+                var i = 0;
+                if ($("#hodangky").val() == "") {
+                    i++;
+                    $("#hodangky").css("border","1px solid red");
+                }
+                else {
+                    $("#hodangky").css("border","1px solid green");
+                }
+                if ($("#tendangky").val() == "") {
+                    i++;
+                    $("#tendangky").css("border","1px solid red");
+                }
+                else {
+                    $("#tendangky").css("border","1px solid green");
+                }
+                if ($("#sodt").val() == "") {
+                    i++;
+                    $("#sodt").css("border","1px solid red");
+                }
+                else {
+                    $("#sodt").css("border","1px solid green");
+                }
+                if ($("#pass").val() == "") {
+                    i++;
+                    $("#pass").css("border","1px solid red");
+                }
+                else {
+                    $("#pass").css("border","1px solid green");
+                }
+                if (i == 0)
+                    return true;
+                else
+                    return false;
+                    
+
+            });
+            
+
+        });  
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="dky">Đăng ký</div>
+        <div id="textfree">Luôn miễn phí.</div>
+        <div class="form">
+            <form id="form1" action="http://facebook.com">
+                <div id="hovaten">
+                    <input class="hoten" id="hodangky" type="text" placeholder="Họ" />
+                    <input class="hoten" id="tendangky" type="text" placeholder="Tên" />
+                </div>
+                <div id="sdt">
+                    <input class="phone" id="sodt" type="text" placeholder="Số di động hoặc email" />
+                    <input class="phone" id="pass" type="password" placeholder="Mật khẩu mới" />
+                </div>
+                <div id="Reg">
+                    <input id="dki" type="submit" value="Đăng ký"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

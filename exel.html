@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+
+</head>
+
+<body>
+	<div id="Nhap">
+		<form>
+			Số dòng:
+			<input type="text" id="sodong">
+			<br/> Số cột:
+			<input type="text" id="socot">
+			<br/>
+			<br/>
+			<input type="button" value="Tạo table" onclick="Taobang()">
+		</form>
+	</div>
+	<div id="in">
+
+	</div>
+
+    <script type="text/javascript">
+        function loop(){
+
+        }
+
+		function Taobang() {
+			var row = document.getElementById("sodong");
+			var column = document.getElementById("socot");
+			var nhan = document.getElementById("in");
+			var hang = parseInt(row.value);
+			var cot = parseInt(column.value);
+			var a=65;
+			var b =65,e=65;
+            var c,d,f;
+            
+			var tagTable = "<table border='1'>";
+
+			for (var i = 0; i < hang; i++) {
+				tagTable+= "<tr>";
+				for (var j = 0; j < cot; j++) {
+					var giaTri;
+					if(i==0)
+						{
+							if(j<26)
+                            {
+                                giaTri=String.fromCharCode(a);
+                                a++;
+                            }
+                            else if(j>=26 && j<=675){
+                                c=String.fromCharCode(e);
+                                d=String.fromCharCode(b);
+                                giaTri=c+d;
+                                b++;
+                                if(j%26==25)
+                                {
+                                    e++;
+                                    b=65;
+                                }
+
+
+                            }
+						}
+					else
+						{giaTri=1;}
+				tagTable += "<td>"+ giaTri +"</td>";
+				}
+				tagTable+= "</tr>";		
+			}
+			tagTable +="</table>";
+			nhan.innerHTML = tagTable;
+		}
+	</script>
+</body>
+
+</html>

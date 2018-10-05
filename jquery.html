@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#taotable").click(function () {
+                var hang=$("#sodong").val();
+                var cot=$("#socot").val();
+                var tagTable = "<table border='1'>";
+                var giaTri,a=65;
+    		    	for (var i = 0; i < hang; i++) {
+				        tagTable+= "<tr>";
+				    for (var j = 0; j < cot; j++) {
+				    	    if(i==0)
+				    		    {giaTri=String.fromCharCode(a);
+                                a++;}
+						    else
+						        giaTri=1;
+			    	tagTable += "<td>"+ giaTri +"</td>";
+				}
+				tagTable+= "</tr>";		
+			}
+			tagTable +="</table>";
+            $("#in").html(tagTable);
+               });
+
+        });
+    </script>
+</head>
+<body>
+    <form>
+        <span>Số dòng: </span><input type="text" id="sodong"> <br/>
+        <span>Số cột: </span><input type="text" id="socot"> <br/> <br/>
+        <input type="button" value = "Tạo table" id="taotable">
+    </form>
+    <div id="in">
+    </div>
+</body>
+</html>

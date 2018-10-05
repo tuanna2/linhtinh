@@ -1,0 +1,155 @@
+body{
+	margin:0;
+}
+#phandau{
+	width: 100%;
+	height:60px;
+	background: black;
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+
+}
+#giohang{
+	text-align: right;
+}
+
+#giohang p{
+	color:white;
+	margin:0;
+	padding-right: 100px;
+}
+#giohang img{
+	padding-right: 120px;
+	padding-top: 7px;
+}
+#giohang a:hover,a:active{
+	color:#800000;
+	text-decoration: none;
+}
+#logo a:link,a:visited{
+text-align: center;
+text-decoration: none;
+color:blue;
+}
+#logo{
+	border-bottom: 1px solid black;
+	height:60px;
+}
+#menu{
+	height:60px;
+}
+#divleft a:link,a:visited{
+	 text-decoration:none;
+	color:black;
+}
+#divleft a:hover{
+	color:#66CCFF;
+}
+#divleft a:active{
+	color:#3399FF;
+}
+#divleft{
+	width: 70%;
+	height:60px;
+	float:left;
+}
+#divright{
+	
+	height:60px;
+	float:right;
+	padding-top: 15px
+}
+#divleft ul li{
+	float:left;
+	list-style: none;
+	padding-right: 40px;
+	font-size: 18px;
+}
+#Search{
+	background:url(14173-200.png) no-repeat;
+	padding-right: 15px;
+    padding-bottom: 5px;
+    border: 0;
+}
+#phannen img{
+	width: 100%
+}
+#phananh1{
+	padding-top: 30px;
+    height: 300px;
+}
+#anh3cai{
+	float:left;
+	padding-bottom: 50px;
+}
+#anh3cai img{
+	width:30%;
+	padding-right: 30px;
+}
+.bochinh{
+	border: 1px solid #800000;
+    width: 22%;	
+    float:left;
+    margin-right: 28px;
+    text-align: center;
+}
+#phananh2{
+
+}
+.bochinh2{
+	border: 1px solid #800000;
+	float:left;
+	width: 25%;
+	text-align:center;
+	margin-top: 30px;
+	margin-right: -120px;
+	margin-left: 219px;
+	margin-bottom: 20px;
+}
+#allimg{
+	    height: 850px;
+}
+#allimg a:link,a:visited{
+	color:black;
+}
+
+#allimg a:hover{
+	color:#272a2b57;
+}
+.buysp{
+	margin-top: -18px;
+}
+#phangioithieu{
+	    height: 260px;
+}
+.col img{
+	width: 30px;
+	height:30px;
+}
+.col{
+	float:left;
+	width: 25%;
+
+}
+
+.col a:link,a:visited{
+	color:#272a2be0;
+	text-decoration: none;
+
+}
+.col a:hover,a:active{
+	color:#272a2b57;
+}
+.col ul,li{
+	color:#272a2be0;
+	list-style: none;
+	padding-left: 0;
+	padding-bottom:10px;
+	
+}
+.icon{
+	margin-bottom: -8px;
+	padding-top: 13px;
+}
